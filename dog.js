@@ -1,5 +1,4 @@
 import chalk from "chalk";
-
 export default function Dog(name) {
   this.name = name;
   this.stomach = [];
