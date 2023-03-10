@@ -1,7 +1,14 @@
-import Dog from "./dog.js";
 import Cat from "./cat.js";
+import Mouse from "./mouse.js";
+import Dog from "./dog.js";
 
-var dog = new Dog("Tom");
 var cat = new Cat();
+var mouse = new Mouse("Micky");
+var dog = new Dog("Bard");
 
-dog.sayHi();
+try {
+  cat.eat(Dog);
+} catch {
+  console.log("Error while cat eating Dog");
+}
+console.log(cat);
